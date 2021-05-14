@@ -5,6 +5,7 @@ import { DISHES } from '../shared/dishes';
 import { render } from '@testing-library/react';
 import { Component } from 'react';
 import Header from './HeaderComponent';
+import Footer from './FooterComponent';
 import DishDetail from "./DishdetailComponent";
 
 
@@ -33,6 +34,7 @@ class Main extends Component {
     onClick={(dishId) => this.onDishSelect(dishId)}/>
     <DishDetail 
         dish ={this.state.dishes.filter((dish) => dish.id === this.state.selectedDish )[0]} />
+       <Footer /> 
     </div>
   );
 }
