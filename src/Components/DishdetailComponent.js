@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
 import { Component } from "react";
 import { Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap";
+import React from 'react';
 
 class DishDetail extends Component {
     constructor(props) {
